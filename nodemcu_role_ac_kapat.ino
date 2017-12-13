@@ -1,4 +1,3 @@
-
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
@@ -6,7 +5,17 @@
 
 const char* ssid = "mywifi";
 const char* password = "1234567890";
-String pageText = "<meta charset=\"UTF-8\"><style>input {width:200px;height:50px;font-size:25px;}</style><INPUT TYPE=\"button\" value='1. Röleyi Aç' onClick=\"parent.location='/r1ac'\"><INPUT TYPE=\"button\" value='2. Röleyi Aç' onClick=\"parent.location='/r2ac'\"><INPUT TYPE=\"button\" value='3. Röleyi Aç' onClick=\"parent.location='/r3ac'\"><INPUT TYPE=\"button\" value='4. Röleyi Aç' onClick=\"parent.location='/r4ac'\"><br><INPUT TYPE=\"button\" value='1. Röleyi Kapat' onClick=\"parent.location='/r1kapat'\"><INPUT TYPE=\"button\" value='2. Röleyi Kapat' onClick=\"parent.location='/r2kapat'\"><INPUT TYPE=\"button\" value='3. Röleyi Kapat' onClick=\"parent.location='/r3kapat'\"><INPUT TYPE=\"button\" value='4. Röleyi Kapat' onClick=\"parent.location='/r4kapat'\">";
+String pageText = "<meta charset=\"UTF-8\">"+
+                  "<style>input {width:200px;height:50px;font-size:25px;}</style>"+
+                  "<INPUT TYPE=\"button\" value='1. Röleyi Aç' onClick=\"parent.location='/r1ac'\">"+
+                  "<INPUT TYPE=\"button\" value='2. Röleyi Aç' onClick=\"parent.location='/r2ac'\">"+
+                  "<INPUT TYPE=\"button\" value='3. Röleyi Aç' onClick=\"parent.location='/r3ac'\">"+
+                  "<INPUT TYPE=\"button\" value='4. Röleyi Aç' onClick=\"parent.location='/r4ac'\">"+
+                  "<br>"+
+                  "<INPUT TYPE=\"button\" value='1. Röleyi Kapat' onClick=\"parent.location='/r1kapat'\">"+
+                  "<INPUT TYPE=\"button\" value='2. Röleyi Kapat' onClick=\"parent.location='/r2kapat'\">"+
+                  "<INPUT TYPE=\"button\" value='3. Röleyi Kapat' onClick=\"parent.location='/r3kapat'\">"+
+                  "<INPUT TYPE=\"button\" value='4. Röleyi Kapat' onClick=\"parent.location='/r4kapat'\">";
 int role1=14;                 
 int role2=12;                 
 int role3=13;                 
